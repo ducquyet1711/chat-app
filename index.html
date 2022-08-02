@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" charset="UTF-8">
+    <title>CHAT</title>
+    <link rel="icon" href="https://banner2.cleanpng.com/20171202/098/chat-png-5a22aa13d7c527.5243875515122212038838.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+    <div id="chat-page">
+        <div class="chat-container">
+            <div class="chat-header">
+                <h2>Chat</h2>
+            </div>
+
+            <ul id="messages"></ul>
+            
+            <div class="form-message">
+                <div class="input-group">
+                    <input type="text"  id="message" placeholder="Type a message..." required class="form-control">   
+                    <button id = "mybtn" type = "submit" class="primary" onclick="handleSubmitNewMessage()"> Gửi </button>
+                </div>   
+            </div>
+           
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.1/socket.io.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
